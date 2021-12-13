@@ -3,7 +3,7 @@ import os
 import random
 import re
 import sys
-
+import numpy
 #
 # Complete the 'simpleArraySum' function below.
 #
@@ -12,13 +12,14 @@ import sys
 #
 
 def simpleArraySum(ar):
-int sum = 0;
-for (int = 0; i < ar.Length; i ++ )
-{
-    sum += 0;
-}
-return sum;
+
+A = np.array [[1,2]]
+B = np.array [[2,3]]
 # Write your code here
+sum = 0
+for element in ar:
+    sum += element
+return sum
 
 if __name__ == '__main__':
 fptr = open(os.environ['OUTPUT_PATH'], 'w')
