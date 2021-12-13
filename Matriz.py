@@ -3,7 +3,6 @@ import os
 import random
 import re
 import sys
-import numpy
 #
 # Complete the 'simpleArraySum' function below.
 #
@@ -12,19 +11,22 @@ import numpy
 #
 
 def simpleArraySum(ar):
+    ar = [[2,3]]+[[4,3]]
+    sum = 0
+    for i in ar:
+        sum += i
 
-A = np.array [[1,2]]
-B = np.array [[2,3]]
-# Write your code here
-sum = 0
-for element in ar:
-    sum += element
-return sum
+    return sum 
 
 if __name__ == '__main__':
-fptr = open(os.environ['OUTPUT_PATH'], 'w')
-ar_count = int(input().strip())
-ar = list(map(int, input().rstrip().split()))
-result = simpleArraySum(ar)
-fptr.write(str(result) + '\n')
-fptr.close()
+
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    ar_count = int(input().strip())
+
+    ar = list(map(int, input().rstrip().split()))
+
+    result = simpleArraySum(ar)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
