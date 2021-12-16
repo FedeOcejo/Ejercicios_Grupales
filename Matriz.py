@@ -11,16 +11,17 @@ import sys
 #
 
 def simpleArraySum(ar):
-    ar = [[2,3]]+[[4,3]]
+    ar = [1,2,3,4,5]
     sum = 0
-    for i in ar:
-        sum += i
+    for i in range (len(ar)):
+        sum += ar[i]
+    return (sum) 
 
-    return sum 
-
+int (simpleArraySum)
 if __name__ == '__main__':
 
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
     ar_count = int(input().strip())
 
     ar = list(map(int, input().rstrip().split()))
