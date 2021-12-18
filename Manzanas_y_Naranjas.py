@@ -30,3 +30,18 @@ def contador(a, b, c, d, manzanas, naranjas):
     .split()
     )
     tercero = input("Introduzca dos números: ").rstrip().split()
+
+    a = int(primer[0])
+    b = int(primer[1])
+    c = int(segundo[0])
+    d = int(segundo[1])
+    e = int(tercero[0])
+    f = int(tercero[1])
+
+    print("distancias a las que cada manzana cae desde el punto c)")
+    manzanas = list(map(int, input().rstrip().split()))
+    print(
+    " distancias a las que cada naranja cae desde el punto d")
+    naranjas = list(map(int, input().rstrip().split()))
+
+    contador(a, b, c, d, naranjas, manzanas)
