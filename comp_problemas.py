@@ -1,26 +1,62 @@
-#!/bin/python3
 import math
 import os
-import random
+import random 
 import re
 import sys
-#
-# Complete the 'compareTriplets' function below.
-#
-# The function is expected to return an INTEGER_ARRAY.
-# The function accepts following parameters:
-# 1. INTEGER_ARRAY a
-# 2. INTEGER_ARRAY b
-#
-def compareTriplets(a, b):
+from random import randint
 
-# Write your code here
-if __name__ == '__main__':
+lucia1=randint (1,100)
 
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-    a = list(map(int, input().rstrip().split()))
-    b = list(map(int, input().rstrip().split()))
-    result = compareTriplets(a, b)
-    fptr.write(' '.join(map(str, result)))
-    fptr.write('\n')
-    fptr.close()
+lucia2=randint (1,100)
+
+lucia3=randint (1,100)
+
+lucia4=randint (1,100)
+
+lucia5=randint (1,100)
+
+lucia6=randint (1,100)
+
+lucia7=randint (1,100)
+
+lucia8=randint (1,100)
+
+lucia9=randint (1,100)
+
+carlos1=randint (1,100)
+
+carlos2=randint (1,100)
+
+carlos3=randint (1,100)
+
+carlos4=randint (1,100)
+
+carlos5=randint (1,100)
+
+carlos6=randint (1,100)
+
+carlos7=randint (1,100)
+
+carlos8=randint (1,100)
+
+carlos9=randint (1,100)
+
+print("Lucia en la primera acividad saco: ")
+print("\nClarity={}".format(lucia1))
+print("\nOriginality={}".format(lucia2))
+print("\nDificulty={}".format(lucia3))
+
+print("Lucia en la segunda acividad saco: ")
+print("\nClarity={}".format(lucia4))
+print("\nOriginality={}".format(lucia5))
+print("\nDificulty={}".format(lucia6))
+
+print("Lucia en la tercera acividad saco: ")
+print("\nClarity={}".format(lucia7))
+print("\nOriginality={}".format(lucia8))
+print("\nDificulty={}".format(lucia9))
+
+def compareTipelts()
+pointsLU=0
+pointsCA=0
+
