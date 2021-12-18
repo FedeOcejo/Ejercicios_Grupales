@@ -1,23 +1,18 @@
-#!/bin/python3
-import math
 import os
-import random
-import re
-import sys
-#
-# Complete the 'gameOfStones' function below.
-#
-# The function is expected to return a STRING.
-# The function accepts INTEGER n as parameter.
-#
-def gameOfStones(n):
-# Write your code here
-
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-    t = int(input().strip())
-    for t_itr in range(t):
-    n = int(input().strip())
-    result = gameOfStones(n)
-    fptr.write(result + '\n')
-fptr.close()
+def gameOfStrones (n):
+    campeon = " "
+    if (mejorjugada(n)!=0):
+        campeon= "jugador 1 es el ganador"
+    else:
+        campeon = "jugador 2 es el ganador"
+    return campeon
+def mejorjugada(n):
+    jugada = 0
+    residuo = n%7
+    if residuo >= 2 and residuo <=3:
+        jugada= 2
+    elif residuo ==4:
+        jugada = 3
+    elif residuo>=5 and residuo<=6:
+        jugada = 5
+    return jugada
