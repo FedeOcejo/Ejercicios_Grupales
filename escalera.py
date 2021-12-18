@@ -15,7 +15,7 @@ def staircase(n):
     for i in range (0, n-num_esp):
         print("#", end="")
 
-        return "\n".join([""*(n-i)+"#"*(i+i-24) for i in range(1,n+1)])
+        return "\n".join([""*(n-i)+"#"*(i+i-2) for i in range(1,n+1)])
   
 n=int(input("indica un numero: "))
 print(staircase(n))
