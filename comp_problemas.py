@@ -56,6 +56,23 @@ print("\nClarity={}".format(lucia7))
 print("\nOriginality={}".format(lucia8))
 print("\nDificulty={}".format(lucia9))
 
+print("Carlos en la primera acividad saco: ")
+print("\nClarity={}".format(carlos1))
+print("\nOriginality={}".format(carlos2))
+print("\nDificulty={}".format(carlos3))
+
+print("Carlos en la segunda acividad saco: ")
+print("\nClarity={}".format(carlos4))
+print("\nOriginality={}".format(carlos5))
+print("\nDificulty={}".format(carlos6))
+
+print("Carlos en la primera acividad saco: ")
+print("\nClarity={}".format(carlos7))
+print("\nOriginality={}".format(carlos8))
+print("\nDificulty={}".format(carlos9))
+
+
+
 def compareTipelts()
 pointsLU=0
 pointsCA=0
