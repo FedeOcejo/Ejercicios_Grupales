@@ -31,3 +31,12 @@ def partida (n):
                 jugada1 =2
         print ("Juega jugafor 1" + str((intentos%2)+1) + "retirando" + str(jugada1) + "piedras")
         n = n -jugada1
+        if(n==1 or n==0):
+            campeon= ("P"+str(intentos%2)+1 +"es el ganador")
+        intentos+=1
+        print (campeon)
+if __name__ =="__main__":
+    t =int(input().strip())
+    for t_itr in range (t):
+        n=int(input().strip())
+        result = gameOfStrones(n)
