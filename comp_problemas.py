@@ -56,3 +56,10 @@ def compareTipelts():
     else:
         pass
 
+    print("Lucia saco: ")
+    print("carlos saco: ")
+    return
+if lucia1 + lucia2 + lucia3 > carlos1 + carlos2 + carlos3:
+    print("Lucia gano")
+else:
+    print("Carlos gano")
