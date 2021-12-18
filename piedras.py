@@ -16,3 +16,18 @@ def mejorjugada(n):
     elif residuo>=5 and residuo<=6:
         jugada = 5
     return jugada
+
+def partida (n):
+    intentos =0
+    campeon = ""
+    while campeon != "jugador 1 es el ganador" and campeon!= "jugador 2 es el gandor":
+        jugada1 =mejorjugada(n)
+        if jugada1 == 0:
+            if n > 5:
+                jugada1 = 5
+            elif n>3:
+                jugada1 =3
+            else:
+                jugada1 =2
+        print ("Juega jugafor 1" + str((intentos%2)+1) + "retirando" + str(jugada1) + "piedras")
+        n = n -jugada1
