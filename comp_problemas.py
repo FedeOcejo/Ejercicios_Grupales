@@ -4,6 +4,7 @@ import random
 import re
 import sys
 from random import randint
+from typing import ParamSpecArgs
 
 lucia1=randint (1,100)
 
@@ -35,4 +36,23 @@ def compareTipelts():
     pointsCA=0
 
     if lucia1 > carlos1:
+        pointsLU +=1
+    elif lucia1 < carlos1:
+        pointsCA +=1
+    else:
+        pass
+
+    if lucia2 > carlos2:
+        pointsLU +=1
+    elif lucia2 < carlos2:
+        pointsCA +=1
+    else:
+        pass
+
+    if lucia3 > carlos3:
+        pointsLU+=1
+    elif lucia3 < carlos3:
         pointsCA+=1
+    else:
+        pass
+
