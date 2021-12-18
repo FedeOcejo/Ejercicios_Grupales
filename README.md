@@ -26,7 +26,7 @@ print ("introduce los numeros de la martiz: ", end="")
 ar = list(map(int, input().rstrip().split()))
 print (ar)
 result = simpleArraySum(ar)
-print("la suma de los valores vale", result)
+print("la suma de los valores vale", result)```
 
 Hemos creado un código en el cual se compara el resultado de dos alumnos Lucia y Carlos y te dice quien gano o saco mayor calificacion, en el cual empleamos valoreas aleatorios, parametros, opraciones y ciclos
 
@@ -94,7 +94,8 @@ def compareTipelts():
 if lucia1 + lucia2 + lucia3 > carlos1 + carlos2 + carlos3:
     print("Lucia gano")
 else:
-    print("Carlos gano")
+    print("Carlos gano")```
+    
 Hemos creado un código en el cual suma los valores de una matriz sin importar su tamaño y te devuelve este como un numero entero, este mediante a funciones como la suma.
 
 ```import math
@@ -116,7 +117,7 @@ print ("introduce los numeros de la martiz: ", end="")
 ar = list(map(int, input().rstrip().split()))
 print (ar)
 result = aVeryBigSum(ar)
-print("la suma de los valores vale", result)
+print("la suma de los valores vale", result)```
 
 Hemos crado una escalera en la cual tu elijes el tamaño y en cada fila que agreges se agrega un hashtag "#" 
 
@@ -140,4 +141,4 @@ def staircase(n):
         return "\n".join([""*(n-i)+"#"*(i+i-2) for i in range(1,n+1)])
   
 n=int(input("indica un numero: "))
-print(staircase(n))
+print(staircase(n))```
