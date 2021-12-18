@@ -1,27 +1,20 @@
-#!/bin/python3
 import math
 import os
 import random
 import re
 import sys
-#
-# Complete the 'aVeryBigSum' function below.
-#
-# The function is expected to return a LONG_INTEGER.
-# The function accepts LONG_INTEGER_ARRAY ar as parameter.
-#
+
 def aVeryBigSum(ar):
-    ar= [2]
-sum = 0
-    for i in range (len(ar)):
-        sum += ar[i]
-    return (sum) 
+  
+    sum = 0
+    for numero in ar:
+        sum= sum + numero
+    return sum
 
-if __name__ == '__main__':
 
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-    ar_count = int(input().strip())
-    ar = list(map(int, input().rstrip().split()))
-    result = aVeryBigSum(ar)
-    fptr.write(str(result) + '\n')
-    fptr.close()
+n=int (input("intoduzca la dimension de una matriz: "))
+print ("introduce los numeros de la martiz: ", end="")
+ar = list(map(int, input().rstrip().split()))
+print (ar)
+result = aVeryBigSum(ar)
+print("la suma de los valores vale", result)
