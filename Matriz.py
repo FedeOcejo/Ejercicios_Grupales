@@ -3,31 +3,20 @@ import os
 import random
 import re
 import sys
-#
-# Complete the 'simpleArraySum' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts INTEGER_ARRAY ar as parameter.
-#
+
+
 
 def simpleArraySum(ar):
-    ar = [1,2,3,4,5]
+   
     sum = 0
-    for i in range (len(ar)):
-        sum += ar[i]
-    return (sum) 
+    for numero in ar:
+      sum= sum + numero
+    return sum
 
-int (simpleArraySum)
-if __name__ == '__main__':
 
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    ar_count = int(input().strip())
-
-    ar = list(map(int, input().rstrip().split()))
-
-    result = simpleArraySum(ar)
-
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+n=int (input("intoduzca la dimension de una matriz: "))
+print ("introduce los numeros de la martiz", end="")
+ar = list(map(int, input().rstrip().split()))
+print (ar)
+result = simpleArraySum(ar)
+print("la suma de los valores vale", result)
